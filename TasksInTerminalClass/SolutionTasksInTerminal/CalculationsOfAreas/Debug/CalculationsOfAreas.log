@@ -1,0 +1,3 @@
+﻿  main.c
+C:\Users\Екатерина\GitHub\Informatics-and-Programming\TasksInTerminalClass\SolutionTasksInTerminal\CalculationsOfAreas\main.c(13,17): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  CalculationsOfAreas.vcxproj -> C:\Users\Екатерина\GitHub\Informatics-and-Programming\TasksInTerminalClass\SolutionTasksInTerminal\Debug\CalculationsOfAreas.exe
