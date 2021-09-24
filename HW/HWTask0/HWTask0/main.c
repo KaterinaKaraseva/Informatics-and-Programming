@@ -1,3 +1,5 @@
+/*Определить, каково взаимное расположение двух окружностей с заданными координатами центров и радиусами.*/
+
 #include <stdio.h>
 #include <math.h>
 
@@ -18,32 +20,27 @@ int main()
 	//action
 
 	d = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-
+	
 	//output
-
-	if (d == r1 + r2) {
-		printf("Kasautsa");
+	if ((r1 == r2) && d == r1 + r2) {
+		printf("Casaetca");
 	}
-	else
-		if (d < r1 + r2) {
-			if (d == 0 && r1 == r2) {    //&& = AND
-				printf("Sovpadaet");
-			}
-			else
-				if (d + r1 < r2 || d + r2 < r1) {    // || = OR
-					printf("Odna vnuutri drugoy");
-				}
-				else {
-					printf("Odna vnutri drugoy(Vnutri kasautsa)");
-				}
-		} else
-			if (d = r1 + r2) {
-				if (d == 0 && r1 == r2)
-					printf("Ne kasautsa");
-			}
-			else {
-				printf("");
-			}
+	else {
+		if (r1 < d && r2 > d) {
+			printf("Peresecautca");
+		}
+		else if (r1 > d && r2 < d) {
+			printf("Peresecautca");
+		}
+		else if ((x1 >= x2) && (y1 >= y2) && (d < r1 + r2)) {
+			printf("Odna v drugoi");
+		}
+		else if ((x1 <= x2) && (y1 <= y2) && (d < r1 + r2)) {
+			printf("Odna v drugoi");
+		}
+		
+	}
+	
 
 		return 0;
 
