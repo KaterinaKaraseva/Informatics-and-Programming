@@ -20,31 +20,30 @@ int main()
 	//action
 
 	d = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-	
+
 	//output
-	if ((r1 == r2) && d == r1 + r2) {
+
+	if (d = r1 + r2) {
 		printf("Casaetca");
 	}
-	else {
-		if (r1 < d && r2 > d) {
-			printf("Peresecautca");
-		}
-		else if (r1 > d && r2 < d) {
-			printf("Peresecautca");
-		}
-		else if ((x1 >= x2) && (y1 >= y2) && (d < r1 + r2)) {
-			printf("Odna v drugoi");
-		}
-		else if ((x1 <= x2) && (y1 <= y2) && (d < r1 + r2)) {
-			printf("Odna v drugoi");
-		}
-		else
-			printf("Oni ne radom druug s drugom(Ti pereborshil)");
-		
+	else if (d < r1 + r2) {
+		printf("Peresecautca");
 	}
-	
+	else if (d = r1 - r2) {
+		printf("Vnutrinee kasanie");
+	}
+	else if (d = 0, r1 = r2) {
+		printf("Sovpadaut");
+	}
+	else if (d + r1 < r2 || d + r2 < r1) {
+		printf("Odna v drugoi");
+	}
+	else if (d > r1 + r2) {
+		printf("Oni nicac ne svazani(Ti pereborshil)");
+	}
 
-		return 0;
 
-
+	return 0;
+	// && - AND
+	// || - OR
 }

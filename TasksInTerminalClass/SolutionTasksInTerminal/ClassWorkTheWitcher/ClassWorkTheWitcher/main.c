@@ -10,16 +10,39 @@
 int main() {
 
 	setlocale(LC_ALL, "russian");
-	printf("Задача о ведьмаке и чеканной монете\n");
+	printf("Задача о том, как Ведьмак убил монстра и получает за это деньги\n");
 
 	int a = 1, b = 5, c = 10, d = 25;
 	int min, coin;
 
-	printf("Введите цену за услуги ведьмака:");
-	scanf_s("%d", &coin);
+	printf("Ведьмаку заплатите чеканной моентой:");
+	scanf_s("%d", &coin);         
 
-	while ()
+	while (coin >= d) {
+		coin = coin - d;
+		min = coin + (coin%d);
+	} goto Final;
 
+	while (coin >= c) {
+		coin = coin - c;
+		min = coin + (coin % c);
+	} goto Final;
 
-	return 0;
+	while (coin >= b) {
+		coin = coin - b;
+		min = coin + (coin % b);
+	} goto Final;
+
+	while (coin >= a) {
+		coin = coin - a;
+		min = coin + (coin % a);
+	} goto Final;
+
+	Final:
+
+	printf("Чтобы Геральд из Ривии не рассердился ему нужно выдать: %.d", min);
+	printf(" монеты\n");
+		return 0;
 }
+
+/* Выдается например число 52. Нужно сделать так чтобы ведьмаку заплатили 25+25+1+1. То есть должно получится 4 монеткии.*/
