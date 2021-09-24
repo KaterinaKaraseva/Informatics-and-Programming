@@ -13,34 +13,34 @@ int main() {
 	printf("Задача о том, как Ведьмак убил монстра и получает за это деньги\n");
 
 	int a = 1, b = 5, c = 10, d = 25;
-	int min, coin;
+	int coin;
+	int min1=0, min2=0, min3=0, min4=0;
 
 	printf("Ведьмаку заплатите чеканной моентой:");
 	scanf_s("%d", &coin);         
 
 	while (coin >= d) {
 		coin = coin - d;
-		min = coin + (coin%d);
-	} goto Final;
+		min1 = min1 + 1;
+	} 
 
 	while (coin >= c) {
 		coin = coin - c;
-		min = coin + (coin % c);
-	} goto Final;
+		min2 = min2 + 1;
+	} 
 
 	while (coin >= b) {
 		coin = coin - b;
-		min = coin + (coin % b);
-	} goto Final;
+		min3 = min3 + 1;
+	}
 
 	while (coin >= a) {
 		coin = coin - a;
-		min = coin + (coin % a);
-	} goto Final;
+		min4 = min4 + 1;
+	} 
 
-	Final:
 
-	printf("Чтобы Геральд из Ривии не рассердился ему нужно выдать: %.d", min);
+	printf("Чтобы Геральд из Ривии не рассердился ему нужно выдать: %.d", min1+min2+min3+min4);
 	printf(" монеты\n");
 		return 0;
 }
