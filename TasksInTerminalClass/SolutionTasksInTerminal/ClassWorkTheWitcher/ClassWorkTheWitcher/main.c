@@ -10,7 +10,7 @@
 int main() {
 
 	setlocale(LC_ALL, "russian");
-	printf("Задача о ведьмаке и чеканной монете");
+	printf("Задача о ведьмаке и чеканной монете\n");
 
 	float a = 1, b = 5, c = 10, d = 25;
 	float min, coin;

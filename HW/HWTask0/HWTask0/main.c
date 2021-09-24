@@ -5,7 +5,7 @@
 
 int main()
 {
-	printf("Task with circles");
+	printf("Task with circles\n");
 	//init
 
 	float x1, x2, y1, y2, r1, r2;
@@ -38,6 +38,8 @@ int main()
 		else if ((x1 <= x2) && (y1 <= y2) && (d < r1 + r2)) {
 			printf("Odna v drugoi");
 		}
+		else
+			printf("Oni ne radom druug s drugom(Ti pereborshil)");
 		
 	}
 	
