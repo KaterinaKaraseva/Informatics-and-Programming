@@ -12,11 +12,13 @@ int main() {
 	setlocale(LC_ALL, "russian");
 	printf("Задача о ведьмаке и чеканной монете\n");
 
-	float a = 1, b = 5, c = 10, d = 25;
-	float min, coin;
+	int a = 1, b = 5, c = 10, d = 25;
+	int min, coin;
 
 	printf("Введите цену за услуги ведьмака:");
-	scanf_s("%f", &coin);
+	scanf_s("%d", &coin);
+
+	while ()
 
 
 	return 0;
