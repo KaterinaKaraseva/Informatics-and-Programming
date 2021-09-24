@@ -9,7 +9,7 @@ int main()
 	//init
 
 	float x1, x2, y1, y2, r1, r2;
-	float d;
+	float d, max, min;
 
 	printf("Input 1st circle (i form x y r):");
 	scanf_s("%f %f %f", &x1, &y1, &r1);
@@ -20,30 +20,34 @@ int main()
 	//action
 
 	d = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+	max = (r1 > r2) ? r1 : r2;
+	min = (r1 < r2) ? r1 : r2;
 
 	//output
 
-	if (d = r1 + r2) {
+	if (d == r1 + r2 && r1 == r2) {
 		printf("Casaetca");
 	}
-	else if (d < r1 + r2) {
-		printf("Peresecautca");
-	}
-	else if (d = r1 - r2) {
+	else if (d < max && max == min +d) {
 		printf("Vnutrinee kasanie");
 	}
-	else if (d = 0, r1 = r2) {
-		printf("Sovpadaut");
+	else if (d == 0 && r1 == r2) {
+		printf("Sovpadaut-");
 	}
-	else if (d + r1 < r2 || d + r2 < r1) {
-		printf("Odna v drugoi");
+	else if(d + r1 < r2 && d > ((r1 > r2) ? r1 : r2)) {
+		printf("Odna v drugoi-");
 	}
 	else if (d > r1 + r2) {
-		printf("Oni nicac ne svazani(Ti pereborshil)");
+		printf("Oni nicac ne kacautsa(Ti pereborshil)");
+	}
+	else if ((d < r1 + r2) && (d + r1 > r2 || d + r2 > r1)) {
+		printf("Peresecautca");
 	}
 
 
 	return 0;
-	// && - AND
-	// || - OR
+
+	// && - и
+	// || - или
+	// == - сравнение
 }
