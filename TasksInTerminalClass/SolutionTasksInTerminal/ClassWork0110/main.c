@@ -6,7 +6,7 @@ int main() {
 
 	while (isWork) {
 		printf("Let's ivers numbers!\n");
-		printf(" For exit enter 0\n");
+		printf("  For exit enter 0\n\n");
 		/* ... */
 
 		int isError = 0;
@@ -27,9 +27,14 @@ int main() {
 		} while (isError);
 
 		int invers = 0;
+		while (number) {
+			invers *= 10;
+			invers += number % 10;
+			number = number / 10;
+		}
 
 		// ...
-		printf("Result: %d", invers);
+		printf("Result: %d\n", invers);
 	}
 
   return 0;
