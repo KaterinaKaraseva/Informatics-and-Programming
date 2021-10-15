@@ -1,0 +1,5 @@
+﻿  main.c
+C:\Users\itmm-2112-a\Desktop\works\Informatics-and-Programming\TasksInTerminalClass\SolutionTasksInTerminal\ClassWork0810\ClassWork0810\main.c(77,23): warning C4013: malloc: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\itmm-2112-a\Desktop\works\Informatics-and-Programming\TasksInTerminalClass\SolutionTasksInTerminal\ClassWork0810\ClassWork0810\main.c(82,18): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+C:\Users\itmm-2112-a\Desktop\works\Informatics-and-Programming\TasksInTerminalClass\SolutionTasksInTerminal\ClassWork0810\ClassWork0810\main.c(153,6): warning C4013: free: нет определения; предполагается "extern" с возвратом типа "int"
+  ClassWork0810.vcxproj -> C:\Users\itmm-2112-a\Desktop\works\Informatics-and-Programming\TasksInTerminalClass\SolutionTasksInTerminal\ClassWork0810\Debug\ClassWork0810.exe
