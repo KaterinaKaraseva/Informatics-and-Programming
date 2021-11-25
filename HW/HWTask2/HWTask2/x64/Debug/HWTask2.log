@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\kkara\Desktop\Informatics-and-Programming\HW\HWTask2\HWTask2\main.c(19,7): warning C4013: srand: нет определения; предполагается "extern" с возвратом типа "int"
+C:\Users\kkara\Desktop\Informatics-and-Programming\HW\HWTask2\HWTask2\main.c(21,14): warning C4013: rand: нет определения; предполагается "extern" с возвратом типа "int"
+  HWTask2.vcxproj -> C:\Users\kkara\Desktop\Informatics-and-Programming\HW\HWTask2\x64\Debug\HWTask2.exe
